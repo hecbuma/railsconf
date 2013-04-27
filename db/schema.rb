@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130426183907) do
+ActiveRecord::Schema.define(:version => 20130427174454) do
+
+  create_table "sessions", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "day"
+    t.string   "room"
+    t.string   "event_type"
+    t.string   "event"
+    t.string   "time"
+    t.string   "speaker"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "provider"
