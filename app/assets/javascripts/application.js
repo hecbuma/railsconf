@@ -12,4 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require gumpy/gumby
+//= require gumpy/ui/gumby.checkbox
+//= require gumpy/ui/gumby.radiobtn
+//= require gumpy/ui/gumby.checkbox
+//= require gumpy/ui/gumby.fixed
+//= require gumpy/ui/gumby.radiobtn
+//= require gumpy/ui/gumby.retina
+//= require gumpy/ui/gumby.skiplink
+//= require gumpy/ui/gumby.tabs
+//= require gumpy/ui/gumby.toggleswitch
+//= require gumpy/ui/jquery.validation
 //= require_tree .

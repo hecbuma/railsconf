@@ -1,0 +1,48 @@
+{
+	keynotes: [
+	{
+		id: 1,
+		speaker: "David Heinemeier Hansson",
+		picture: "http://www.railsconf.com/assets/keynote-hansson-00d7f9b63431d3363248e7cf49672983.png",
+		bio: "
+        DHH is the creator of Ruby on Rails, partner at 37signals, best-selling author, public speaker, race- car driver, hobbyist photographer, and family man. He tweets from @dhh.
+      ",
+	},
+	{
+		id: 2,
+		speaker: "Michael Lopp",
+		picture: "http://www.railsconf.com/assets/keynote-lopp-442a9a8362ce7b0cbb2b9925fc62210b.png",
+		bio: "
+        Michael Lopp is a Silicon Valley-based engineering leader who builds both people and software at companies such as Borland, Netscape, Apple, and Palantir. While he's not worrying about staying relevant, he writes about pens, bridges, people, poker, and werewolves at the popular weblog, Rands in Repose.
+      
+        Michael has written two books. 'Being Geek' is a career handbook for geeks and nerds alike. His first book 'Managing Humans, 2nd Edition' is a popular guide to the art of engineering leadership and clearly explains that while you might be rewarded for what you build, you will only be successful because of your people.
+      
+        Michael surfs, plays hockey, and drinks red wine in the redwoods of Northern California whenever he can because staying sane is more important than staying busy.
+      ",
+	},
+	{
+		id: 3,
+		speaker: "Yehuda Katz",
+		picture: "http://www.railsconf.com/assets/keynote-katz-38dcaa8e79431159549f5597f3f184ec.png",
+		bio: "
+        Yehuda Katz is a member of the Ember.js, Ruby on Rails and jQuery Core Teams; his 9-to-5 home is at the startup he founded, Tilde Inc.. Yehuda is the co-author of best-selling jQuery in Action and Rails 3 in Action. He spends most of his time hacking on open source—his main projects, along with others, like Thor, Handlebars and Janus—or traveling the world doing open source evangelism work. He blogs at http://yehudakatz.com and can be found on Twitter as @wycats.
+      ",
+	},
+	{
+		id: 4,
+		speaker: "James Duncan Davidson",
+		picture: "http://www.railsconf.com/assets/keynote-davidson-fc004f127a6d7f5d5d78f023d0d40fdf.png",
+		bio: "
+        James Duncan Davidson—most people call him “Duncan” these days but he’s equally comfortable with people calling him “James”—is a software developer, photographer, and author currently based out of Portland, Oregon USA. He’s lucky enough to travel the world and takes a camera with him wherever he goes. A long time ago, he was the original developer of Apache Ant and Tomcat and was instrumental in making them open source. These days, he uses Ruby a lot is pretty happy about it.
+      ",
+	},
+	{
+		id: 5,
+		speaker: "Aaron Patterson",
+		picture: "http://www.railsconf.com/assets/keynote-patterson-2e76f61bb33a1d72099feb1f5f1ea9ff.png",
+		bio: "
+        Aaron was born and raised on the mean streets of Salt Lake City. His only hope for survival was to join the local gang of undercover street ballet performers known as the Tender Tights. As a Tender Tights member, Aaron learned to perfect the technique of self-defense pirouettes so that nobody, not even the Parkour Posse could catch him. Between vicious street dance-offs, Aaron taught himself to program. He learned to combine the art of street ballet with the craft of software engineering. Using these unique skills, he was able to leave his life on the streets and become a professional software engineer. He is currently Pirouetting through Processes, and Couruing through code for AT&T. Sometimes he thinks back fondly on his life in the Tender Tights, but then he remembers that it is better to have Tender Loved and Lost than to never have Tender Taught at all.
+      ",
+	},
+	]
+}

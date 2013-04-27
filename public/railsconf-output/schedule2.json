@@ -1,0 +1,223 @@
+{
+	"schedule": [
+	{
+		"id": 1,
+		"event_type": "Plenary",
+		"time": "10:00am-11:15am",
+		"events": [
+			{
+				"place": "251+257+258",
+				"event": "Morning announcements and keynote",
+				"speaker": "Yehuda Katz"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"event_type": "Session",
+		"time": "11:30am-12:10pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Rails Vs. The Client Side",
+				"speaker": "Noel Rappin"
+			},
+			{
+				"place": "254",
+				"event": "Of Buyers And Renters and keeping a roof over our heads",
+				"speaker": "Sebastian Delmont"
+			},
+			{
+				"place": "255",
+				"event": "Make Your Application Snappier With Asynchronous Workers",
+				"speaker": "Dave Kapp"
+			},
+			{
+				"place": "Intro",
+				"event": "Test-Driven Development: Tools, Techniques, and Discipline",
+				"speaker": "Harlow Ward & Adarsh Pandit"
+			},
+			{
+				"place": "P&S",
+				"event": "Data Builds in WhitePages",
+				"speaker": "Matt Woodward"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"event_type": "Session",
+		"time": "12:20pm- 1:00pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "The Magic Tricks of Testing",
+				"speaker": "Sandi Metz"
+			},
+			{
+				"place": "254",
+				"event": "Cache = Cash!",
+				"speaker": "Stefan Wintermeyer"
+			},
+			{
+				"place": "255",
+				"event": "Split Testing for Product Discovery",
+				"speaker": "Bryan Woods"
+			},
+			{
+				"place": "Intro",
+				"event": "Intro Workshop"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"event_type": "Lunch",
+		"time": " 1:00pm- 2:00pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Lunch"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"event_type": "Session",
+		"time": " 2:00pm- 2:40pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "From Rails to the Web Server to the Browser",
+				"speaker": "David Padilla"
+			},
+			{
+				"place": "254",
+				"event": "Sleeping with the enemy",
+				"speaker": "George Brocklehurst"
+			},
+			{
+				"place": "255",
+				"event": "Introducing Brainstem, your companion for rich Rails APIs",
+				"speaker": "Andrew Cantino"
+			},
+			{
+				"place": "Intro",
+				"event": "Testing Complex Systems: Creating data and limiting scope",
+				"speaker": "Noel Rappin"
+			},
+			{
+				"place": "P&S",
+				"event": "Flattening The Cloud Learning Curve Using Rails",
+				"speaker": "Michael Murphy"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"event_type": "Session",
+		"time": " 2:50pm- 3:30pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "An Intervention for ActiveRecord",
+				"speaker": "Ernie Miller"
+			},
+			{
+				"place": "254",
+				"event": "What Ruby Developers Can Learn From Go",
+				"speaker": "Lionel Barrow"
+			},
+			{
+				"place": "255",
+				"event": "Designing great APIs: Learning from Jony Ive, Orwell, and the Kano ...",
+				"speaker": "Jon Dahl"
+			},
+			{
+				"place": "Intro",
+				"event": "Intro Workshop"
+			},
+			{
+				"place": "P&S",
+				"event": "Forget Scaling: Focus on Performance",
+				"speaker": "Terence Lee"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"event_type": "Break",
+		"time": " 3:30pm- 4:00pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Afternoon break"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"event_type": "Session",
+		"time": " 4:00pm- 4:40pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Data Storage: NoSQL Toasters and a Cloud of Kitchen Sinks",
+				"speaker": "Casey Rosenthal"
+			},
+			{
+				"place": "254",
+				"event": "Delicious Controversy: Docs & Tests",
+				"speaker": "Thomas Meeks"
+			},
+			{
+				"place": "255",
+				"event": "",
+				"speaker": "Cancelled"
+			},
+			{
+				"place": "Intro",
+				"event": "Ruby Libraries Important for Rails",
+				"speaker": "Michael Hartl"
+			}
+		]
+	},
+	{
+		"id": 9,
+		"event_type": "Session",
+		"time": " 4:50pm- 5:30pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Pry — The Good Parts!",
+				"speaker": "Conrad Irwin"
+			},
+			{
+				"place": "254",
+				"event": "How to Write Documentation for People That Don't Read",
+				"speaker": "Kevin Burke"
+			},
+			{
+				"place": "255",
+				"event": "Postgres, the Best Tool You're Already Using",
+				"speaker": "Adam Sanderson"
+			},
+			{
+				"place": "Intro",
+				"event": "Intro Workshop"
+			}
+		]
+	},
+	{
+		"id": 10,
+		"event_type": "Party",
+		"time": " 5:30pm- 7:00pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Happy hour"
+			}
+		]
+	}
+	]
+}

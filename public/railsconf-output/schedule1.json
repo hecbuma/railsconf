@@ -1,0 +1,214 @@
+{
+	"schedule": [
+	{
+		"id": 1,
+		"event_type": "Plenary",
+		"time": "10:00am-11:15am",
+		"events": [
+			{
+				"place": "251+257+258",
+				"event": "Morning announcements and opening keynote",
+				"speaker": "David Heinemeier Hansson"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"event_type": "Session",
+		"time": "11:30am-12:10pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "How Shopify Scales Rails",
+				"speaker": "John Duff"
+			},
+			{
+				"place": "254",
+				"event": "The Constellation Architecture — All the Little Apps",
+				"speaker": "Shane Becker"
+			},
+			{
+				"place": "255",
+				"event": "Changing the wheels on the bus at 80 mph: upgrading to Rails 3 on a...",
+				"speaker": "Andrew Bloomgarden and Julian Giuca"
+			},
+			{
+				"place": "Intro",
+				"event": "How a Request Becomes a Response",
+				"speaker": "Christopher Green & Aimee Simone"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"event_type": "Session",
+		"time": "12:20pm- 1:00pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Nobody will Train You but You",
+				"speaker": "Zach Briggs"
+			},
+			{
+				"place": "254",
+				"event": "No Traffic, No Users, No Problem! - Usability Testing for New Apps",
+				"speaker": "Jim Jones"
+			},
+			{
+				"place": "255",
+				"event": "Maintainable Templates",
+				"speaker": "Brendan Loudermilk"
+			},
+			{
+				"place": "Intro",
+				"event": "Intro Workshop"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"event_type": "Lunch",
+		"time": " 1:00pm- 2:00pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Lunch"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"event_type": "Session",
+		"time": " 2:00pm- 2:40pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Security is hard, but we can’t go shopping",
+				"speaker": "André Arko"
+			},
+			{
+				"place": "254",
+				"event": "Simple and Elegant Rails Code with Functional Style",
+				"speaker": "Attila Domokos"
+			},
+			{
+				"place": "255",
+				"event": "Testing HTTP APIs in Ruby",
+				"speaker": "Shai Rosenfeld"
+			},
+			{
+				"place": "Intro",
+				"event": "Rails is Just Ruby",
+				"speaker": "Jesse Wolgamott"
+			},
+			{
+				"place": "P&S",
+				"event": "Monitoring the Health of Your App",
+				"speaker": "Carl Lerche and Yehuda Katz"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"event_type": "Session",
+		"time": " 2:50pm- 3:30pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Rails' Insecure Defaults",
+				"speaker": "Bryan Helmkamp"
+			},
+			{
+				"place": "254",
+				"event": "Object-Oriented Lessons for a Service-Oriented World",
+				"speaker": "Chris Kelly"
+			},
+			{
+				"place": "255",
+				"event": "Front-end Testing for Skeptics",
+				"speaker": "Luke Francl"
+			},
+			{
+				"place": "Intro",
+				"event": "Intro Workshop"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"event_type": "Break",
+		"time": " 3:30pm- 4:00pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Afternoon break"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"event_type": "Session",
+		"time": " 4:00pm- 4:40pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Real-time Rails",
+				"speaker": "Brian Cardarella"
+			},
+			{
+				"place": "254",
+				"event": "Incremental Design - A conversation with a designer and a developer.",
+				"speaker": "Rebecca Miller-Webster and Savannah Wolf"
+			},
+			{
+				"place": "255",
+				"event": "Natural Language Processing with Ruby",
+				"speaker": "Brandon Black"
+			},
+			{
+				"place": "P&S",
+				"event": "Automation in Deployment on Hybrid Hosting and Private Cloud Enviro...",
+				"speaker": "Fletcher Nichol"
+			}
+		]
+	},
+	{
+		"id": 9,
+		"event_type": "Session",
+		"time": " 4:50pm- 5:30pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "You've got a Sinatra on your Rails",
+				"speaker": "José Valim"
+			},
+			{
+				"place": "254",
+				"event": "Humanity On Rails",
+				"speaker": "Daniel Azuma"
+			},
+			{
+				"place": "255",
+				"event": "Building Extractable Libraries in Rails",
+				"speaker": "Patrick Robertson"
+			},
+			{
+				"place": "Intro",
+				"event": "Intro Workshop"
+			}
+		]
+	},
+	{
+		"id": 10,
+		"event_type": "Plenary",
+		"time": " 5:45pm- 7:00pm",
+		"events": [
+			{
+				"place": "251+257+258",
+				"event": "Evening announcements and keynote",
+				"speaker": "Michael Lopp"
+			}
+		]
+	}
+	]
+}

@@ -1,0 +1,36 @@
+- if session["event_type"] == "Plenary"
+  .row.time
+    .fourteen.columns
+      = session["time"]
+  - session["events"].each do |talk|
+    .row.talks
+      .fourteen.columns.talk{id: "#{talk["speaker"].downcase.tr(' ', '_') if talk["speaker"] }"}
+        .room= talk["room"]
+        .title= link_to talk["event"]
+        .speaker= talk["speaker"]
+        = link_to '/', id: 'talk_id', class: 'label secondary' do
+          Add
+
+- if session["event_type"] == 'Session'
+  .row.time
+    .fourteen.columns
+      = session["time"]
+
+  .sixteen.colgrid
+    - session["events"].each do |talk|
+      .row.talks
+        .four.columns.talk{id: "#{talk["speaker"].downcase.tr(' ', '_') if talk["speaker"]}"}
+          .room= talk["room"]
+          .title= link_to talk["event"]
+          .speaker= talk["speaker"]
+          = link_to '/', id: 'talk_id', class: 'label secondary' do
+            Add
+
+- if session["event_type"] == "Lunch" || session["event_type"] == "Break" || session["event_type"] == "Party"
+  .row.time
+    .fourteen.columns
+      = session["time"]
+  - session["events"].each do |talk|
+    .row.talks
+      .fourteen.columns.talk
+        .title= talk["event"]

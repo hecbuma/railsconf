@@ -1,0 +1,177 @@
+{
+	"schedule": [
+	{
+		"id": 1,
+		"event_type": "Plenary",
+		"time": "10:00am-11:15am",
+		"events": [
+			{
+				"place": "251+257+258",
+				"event": "Morning announcements and keynote",
+				"speaker": "James Duncan Davidson"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"event_type": "Session",
+		"time": "11:30am-12:10pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Using Elasticsearch with Rails Apps",
+				"speaker": "Brian Gugliemetti"
+			},
+			{
+				"place": "254",
+				"event": "Firefighting on Rails",
+				"speaker": "Ethan Vizitei"
+			},
+			{
+				"place": "255",
+				"event": "Describing Your World with Seahorse",
+				"speaker": "Trevor Rowe"
+			},
+			{
+				"place": "Intro",
+				"event": "Properly Factored MVC in Rails Applications",
+				"speaker": "Katrina Owen & Jeff Casimir"
+			},
+			{
+				"place": "P&S",
+				"event": "New Relic Performance Code Kata",
+				"speaker": "Sam Goldstein and Ben Weintraub"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"event_type": "Session",
+		"time": "12:20pm- 1:00pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Creating Mountable Engines",
+				"speaker": "Patrick Peak"
+			},
+			{
+				"place": "254",
+				"event": "Your First Rails Pull Request",
+				"speaker": "Mark McSpadden"
+			},
+			{
+				"place": "255",
+				"event": "Services and Rails: The Sh*t They Don't Tell You",
+				"speaker": "Brian Morton"
+			},
+			{
+				"place": "Intro",
+				"event": "Intro Workshop"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"event_type": "Lunch",
+		"time": " 1:00pm- 2:00pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Lunch"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"event_type": "Session",
+		"time": " 2:00pm- 2:40pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "DevOps for the Rubyist Soul",
+				"speaker": "John Downey"
+			},
+			{
+				"place": "254",
+				"event": "Developing Rails Apps in Technical Isolation",
+				"speaker": "Jesus Jackson"
+			},
+			{
+				"place": "255",
+				"event": "Zero-downtime payment platforms",
+				"speaker": "Prem Sichanugrist and Ryan Twomey"
+			},
+			{
+				"place": "Intro",
+				"event": "Crafting Gems",
+				"speaker": "Pat Allan"
+			},
+			{
+				"place": "P&S",
+				"event": "Engine Yard Cloud",
+				"speaker": "Edward Chiu"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"event_type": "Session",
+		"time": " 2:50pm- 3:30pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Keeping the lights on: Application monitoring with Sensu and BatsD",
+				"speaker": "Aaron Pfeifer"
+			},
+			{
+				"place": "254",
+				"event": "Schemas for the Real World",
+				"speaker": "Carina C. Zona"
+			},
+			{
+				"place": "255",
+				"event": "Configuration Management Patterns",
+				"speaker": "Beau Harrington"
+			},
+			{
+				"place": "Intro",
+				"event": "Intro Workshop"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"event_type": "Break",
+		"time": " 3:30pm- 4:00pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Afternoon break"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"event_type": "Plenary",
+		"time": " 4:00pm- 5:30pm",
+		"events": [
+			{
+				"place": "251+257+258",
+				"event": "Lightning talks"
+			}
+		]
+	},
+	{
+		
+"id": 9,
+		"event_type": "Plenary",
+		"time": " 5:45pm- 6:30pm",
+		"events": [
+			{
+				"place": "251+257+258",
+				"event": "Evening announcements and the Ruby Hero Awards"
+			}
+		]
+	}
+	]
+}

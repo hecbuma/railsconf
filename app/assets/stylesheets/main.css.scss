@@ -1,0 +1,85 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: #eee;
+}
+
+.login {
+  width: 130px;
+  background-color: white;
+  position: relative;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+
+}
+.login:before {
+content: ' ';
+position: absolute;
+top: -11%;
+left: 20px;
+border-color: transparent transparent #fff transparent;
+border-style: solid;
+border-width: 16px;
+width: 0;
+height: 0;
+}
+
+.logo a{
+  font-size: 1rem;
+  color: white;
+  line-height: 58px !important;
+
+}
+
+@mixin label_font() {
+  font-family: Helvetica, arial, verdana, sans-serif; 
+  font-weight: bold; 
+  font-size: 0.75rem;
+}
+
+@mixin alert_font() {
+    padding: 0 10px; 
+    font-family: "Open Sans"; 
+    font-weight: 600; 
+    list-style-type: none; 
+    word-wrap: break-word; 
+    margin-bottom: 8px; 
+    font-size: 14px; 
+    font-size: 0.875rem;
+}
+.columns {
+  width: 100%;
+}
+.time {
+  margin-bottom: 0;
+  .columns {
+    text-align: center;
+    width: 100%;
+    background: #3085d6;
+    color: white;
+    @include label_font();
+  }
+}
+
+
+.talks {
+  background: white;
+  color: #555555; 
+  @include alert_font();
+  .room {
+    background: #f2f2f2; 
+    color: #555555; 
+    border: 1px solid #f2f2f2; 
+    @include label_font();
+  }
+}
+.tabs .tab-content {
+  padding: 0;
+}
+
+
+
+

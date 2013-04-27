@@ -1,0 +1,82 @@
+{
+	"schedule": [
+	{
+		"id": 1,
+		"event_type": "Session",
+		"time": "10:30am-11:10am",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "How to Talk to Developers",
+				"speaker": "Ben Orenstein"
+			},
+			{
+				"place": "254",
+				"event": "Datomic, from Ruby, from Rails",
+				"speaker": "Yoko Harada"
+			},
+			{
+				"place": "255",
+				"event": "The Long Ball - Upgrading long lived Rails apps from 1.x-4.0",
+				"speaker": "Jesse Wolgamott"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"event_type": "Session",
+		"time": "11:20am-12:00pm",
+		"events": [
+			{
+				"place": "252+253",
+				"event": "Dissecting Ruby with Ruby",
+				"speaker": "Richard Schneeman"
+			},
+			{
+				"place": "254",
+				"event": "TDDing iOS Apps for fun and profit with RubyMotion",
+				"speaker": "Brian Sam-Bodden"
+			},
+			{
+				"place": "255",
+				"event": "Hacking the academic experience",
+				"speaker": "Emily Stolfo"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"event_type": "Lunch",
+		"time": "12:00pm- 2:00pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Lunch"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"event_type": "Plenary",
+		"time": " 2:00pm- 3:30pm",
+		"events": [
+			{
+				"place": "251+257+258",
+				"event": "Closing announcements and keynote",
+				"speaker": "Aaron Patterson"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"event_type": "Party",
+		"time": " 3:30pm- 4:30pm",
+		"events": [
+			{
+				"place": "",
+				"event": "Ice cream social"
+			}
+		]
+	}
+	]
+}

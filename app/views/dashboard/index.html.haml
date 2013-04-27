@@ -1,0 +1,30 @@
+.row 
+  %h2 Complete Schedule
+%section.tabs
+  .row
+    .twelve.columns
+      %ul.tab-nav
+        %li.active
+          %a{:href => "#"} Mon
+        %li
+          %a{:href => "#"} Tus
+        %li
+          %a{:href => "#"} Wed
+        %li
+          %a{:href => "#"} Thu
+
+  .tab-content.active
+    = render partial: 'partials/schedule_day', collection: @full_schedule[:mon]["schedule"], as: :session
+  .tab-content
+    = render partial: 'partials/schedule_day', collection: @full_schedule[:tus]["schedule"], as: :session
+  .tab-content
+    = render partial: 'partials/schedule_day', collection: @full_schedule[:wed]["schedule"], as: :session
+  .tab-content
+    = render partial: 'partials/schedule_day', collection: @full_schedule[:thu]["schedule"], as: :session
+
+
+
+:javascript
+  $(document).ready(function(){
+    window.talks = #{@mon};
+  })
