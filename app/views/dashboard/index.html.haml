@@ -14,17 +14,10 @@
           %a{:href => "#"} Thu
 
   .tab-content.active
-    = render partial: 'partials/schedule_day', collection: @full_schedule[:mon]["schedule"], as: :session
+    = render partial: 'partials/schedule_day', collection: @full_schedule[:mon]["schedule"], as: :session, locals: {day: 'mon'}
   .tab-content
-    = render partial: 'partials/schedule_day', collection: @full_schedule[:tus]["schedule"], as: :session
+    = render partial: 'partials/schedule_day', collection: @full_schedule[:tus]["schedule"], as: :session, locals: {day: 'tus'}
   .tab-content
-    = render partial: 'partials/schedule_day', collection: @full_schedule[:wed]["schedule"], as: :session
+    = render partial: 'partials/schedule_day', collection: @full_schedule[:wed]["schedule"], as: :session, locals: {day: 'wed'}
   .tab-content
-    = render partial: 'partials/schedule_day', collection: @full_schedule[:thu]["schedule"], as: :session
-
-
-
-:javascript
-  $(document).ready(function(){
-    window.talks = #{@mon};
-  })
+    = render partial: 'partials/schedule_day', collection: @full_schedule[:thu]["schedule"], as: :session, locals: {day: 'thu'}

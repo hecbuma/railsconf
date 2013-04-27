@@ -4,4 +4,7 @@ RailsconfApp::Application.routes.draw do
   match "/auth/:provider/callback" => "sessions#create"
 
   resources :dashboard
+  resources :schedule_sessions, path: 'my_schedule'
+
+  match "/signout" => "sessions#destroy", :as => :signout
 end

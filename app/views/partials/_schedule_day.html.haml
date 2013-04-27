@@ -2,14 +2,21 @@
   .row.time
     .fourteen.columns
       = session["time"]
-  - session["events"].each do |talk|
-    .row.talks
-      .fourteen.columns.talk{id: "#{talk["speaker"].downcase.tr(' ', '_') if talk["speaker"] }"}
-        .room= talk["room"]
+  .row.talks
+    - session["events"].each do |talk|
+      - id = "#{talk["speaker"].downcase.tr(' ', '_') if talk["speaker"] }"
+      .fourteen.columns.talk{id: "#{id}"}
+        .room= talk["place"]
         .title= link_to talk["event"]
         .speaker= talk["speaker"]
-        = link_to '/', id: 'talk_id', class: 'label secondary' do
-          Add
+        - if current_user
+          - if current_user.check_id id
+            = link_to '/',  class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{session["time"]}", "data-type" => "#{session["event_type"]}", "data-day" => "#{day}"  do
+              Remove
+          - else
+            = link_to '/',  class: 'add label secondary', "data-talk" => "#{id}", "data-time" => "#{session["time"]}", "data-type" => "#{session["event_type"]}", "data-day" => "#{day}"  do
+              Add
+
 
 - if session["event_type"] == 'Session'
   .row.time
@@ -17,14 +24,20 @@
       = session["time"]
 
   .sixteen.colgrid
-    - session["events"].each do |talk|
-      .row.talks
-        .four.columns.talk{id: "#{talk["speaker"].downcase.tr(' ', '_') if talk["speaker"]}"}
-          .room= talk["room"]
+    .row.talks
+      - session["events"].each do |talk|
+        - id = "#{talk["speaker"].downcase.tr(' ', '_') if talk["speaker"] }"
+        .four.columns.talk{id: "#{id}"}
+          .room= talk["place"]
           .title= link_to talk["event"]
           .speaker= talk["speaker"]
-          = link_to '/', id: 'talk_id', class: 'label secondary' do
-            Add
+          - if current_user
+            - if current_user.check_id id
+              = link_to '/',  class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{session["time"]}", "data-type" => "#{session["event_type"]}", "data-day" => "#{day}"  do
+                Remove
+            - else
+              = link_to '/',  class: 'add label secondary', "data-talk" => "#{id}", "data-time" => "#{session["time"]}", "data-type" => "#{session["event_type"]}", "data-day" => "#{day}"  do
+                Add
 
 - if session["event_type"] == "Lunch" || session["event_type"] == "Break" || session["event_type"] == "Party"
   .row.time

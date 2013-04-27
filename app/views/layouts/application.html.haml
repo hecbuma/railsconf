@@ -14,4 +14,10 @@
         .row
           .fourteen.columns
           .alert.success= flash[:notice]
+      .row
+        .fourteen.columns
+        #done.alert.success.hide
+        #error.alert.danger.hide
+
+
     = yield

@@ -1,0 +1,27 @@
+- if row.event_type == "Plenary"
+  - id = row.speaker.downcase.tr(' ', '_') if row.speaker 
+  .row.time{ class: "my_#{id}"}
+    .fourteen.columns
+      = row["time"]
+  .row.talks{ class: "my_#{id}"}
+    .fourteen.columns.talk{id: "#{id}"}
+      .room= row.room
+      .title= link_to row.event
+      .speaker= row.speaker
+      = link_to '/',  class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{row.time}", "data-type" => "#{row.event_type}", "data-day" => "#{day}"  do
+        Remove
+
+- if row.event_type == 'Session'
+  - id = row.speaker.downcase.tr(' ', '_') if row.speaker 
+  .row.time{class: "my_#{id}"}
+    .fourteen.columns
+      = row.time
+
+  .sixteen.colgrid{class: "my_#{id}"}
+    .row.talks
+      .four.columns.talk{id: "#{id}"}
+        .room= row.room
+        .title= link_to row.event
+        .speaker= row.speaker
+        = link_to '/', class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{row.time}", "data-type" => "#{row.event_type}", "data-day" => "#{day}" do
+          Remove

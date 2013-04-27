@@ -14,4 +14,9 @@ class User < ActiveRecord::Base
     end
   end
 
+  def check_id(id)
+    ids = sessions.map(&:custom_id)
+    ids.include? id
+  end
+
 end

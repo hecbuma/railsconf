@@ -1,0 +1,23 @@
+.row 
+  %h2 My Schedule
+%section.tabs
+  .row
+    .twelve.columns
+      %ul.tab-nav
+        %li.active
+          %a{:href => "#"} Mon
+        %li
+          %a{:href => "#"} Tus
+        %li
+          %a{:href => "#"} Wed
+        %li
+          %a{:href => "#"} Thu
+
+  .tab-content.active
+    = render partial: 'partials/schedule_user_day', collection: @mon, as: :row, locals: {day: 'mon'}
+  .tab-content
+    = render partial: 'partials/schedule_user_day', collection: @tue, as: :row, locals: {day: 'tus'}
+  .tab-content
+    = render partial: 'partials/schedule_user_day', collection: @wed, as: :row, locals: {day: 'wed'}
+  .tab-content
+    = render partial: 'partials/schedule_user_day', collection: @thu, as: :row, locals: {day: 'thu'}

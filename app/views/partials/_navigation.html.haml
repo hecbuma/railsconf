@@ -6,14 +6,20 @@
       RailsConf Schedule App 
   %ul.eight.columns
     %li
-      %a{:href => "#"} 
+      %a{:href => "/dashboard"} 
         Full Schedule
         %i.icon-book-open
-    %li
-      %a{:href => "#"} 
-        My Schedule
-        %i.icon-calendar
-    %li
-      %a{:href => "#"} 
-        Sign Out
-        %i.icon-logout
+    - if current_user
+      %li
+        = link_to schedule_sessions_path() do 
+          My Schedule
+          %i.icon-calendar
+      %li
+        = link_to signout_path do
+          Sign Out
+          %i.icon-logout
+    - else
+      %li
+        = link_to '/auth/github' do
+          Sign In
+          %i.icon-github
