@@ -8,16 +8,23 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    = render 'partials/navigation'
-    .container
-      - if flash[:notice]
+    #wrapper
+      = render 'partials/navigation'
+      .container
+        - if flash[:notice]
+          .row
+            .fourteen.columns
+            .alert.success= flash[:notice]
         .row
           .fourteen.columns
-          .alert.success= flash[:notice]
-      .row
-        .fourteen.columns
-        #done.alert.success.hide
-        #error.alert.danger.hide
+          #done.alert.success.hide
+          #error.alert.danger.hide
 
-
-    = yield
+      = yield
+    
+    %footer
+      %a{:href => "http://www.crowdint.com"}
+        = image_tag 'logo-crowd.svg', class: 'pull-left'
+      %p.pull-left
+        Powered by Crowd Interactive
+      .clearfix

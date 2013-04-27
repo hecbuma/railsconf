@@ -80,6 +80,38 @@ height: 0;
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -42px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, #push {
+  height: 42px; /* .push must be the same height as .footer */
+}
+#push {
+  background-image: url('/assets/bkg.jpg');
+}
+footer {
+  font-family: 'Oswald';
+  background: white;
+  padding: 5px 5px;
+  color: gray;
+  text-transform: uppercase;
+  font-family: 'trebuchet ms';
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  img {float: left; margin-right: 20px}
+  p {
+    padding-top: 9px;
+    font-size: 12px;
+    margin-left: 98px;
+  }
+}
 
 
 
