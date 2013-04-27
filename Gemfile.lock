@@ -88,6 +88,7 @@ GEM
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
+    pg (0.15.1)
     polyglot (0.3.3)
     pry (0.9.12.1)
       coderay (~> 1.0.5)
@@ -153,6 +154,7 @@ DEPENDENCIES
   modernizr-rails
   omniauth
   omniauth-github
+  pg
   pry-rails
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
