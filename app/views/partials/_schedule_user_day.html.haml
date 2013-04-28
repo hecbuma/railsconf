@@ -1,5 +1,5 @@
 - if row.event_type == "Plenary"
-  - id = row.speaker.downcase.tr(' ', '_') if row.speaker 
+  - id = row.speaker.downcase.tr(' ', '_').tr('&','n') if row.speaker 
   .row.time{ class: "my_#{id}"}
     .fourteen.columns
       = row["time"]
@@ -12,7 +12,7 @@
         Remove
 
 - if row.event_type == 'Session'
-  - id = row.speaker.downcase.tr(' ', '_') if row.speaker 
+  - id = row.speaker.downcase.tr(' ', '_').tr('&','n') if row.speaker 
   .row.time{class: "my_#{id}"}
     .fourteen.columns
       = row.time

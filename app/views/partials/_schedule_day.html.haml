@@ -4,7 +4,7 @@
       = session["time"]
   .row.talks
     - session["events"].each do |talk|
-      - id = "#{talk["speaker"].downcase.tr(' ', '_') if talk["speaker"] }"
+      - id = "#{talk["speaker"].downcase.tr(' ', '_').tr('&','n') if talk["speaker"] }"
       .fourteen.columns.talk{id: "#{id}"}
         .room= talk["place"]
         .title= link_to talk["event"]
@@ -26,7 +26,7 @@
   .sixteen.colgrid
     .row.talks
       - session["events"].each do |talk|
-        - id = "#{talk["speaker"].downcase.tr(' ', '_') if talk["speaker"] }"
+        - id = "#{talk["speaker"].downcase.tr(' ', '_').tr('&','n') if talk["speaker"] }"
         .four.columns.talk{id: "#{id}"}
           .room= talk["place"]
           .title= link_to talk["event"]
