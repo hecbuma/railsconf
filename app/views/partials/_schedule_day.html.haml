@@ -5,6 +5,8 @@
   .row.talks
     - session["events"].each do |talk|
       - id = "#{talk["speaker"].downcase.tr(' ', '_').tr('&','n') if talk["speaker"] }"
+      - if id.blank?
+        - id = "#{talk["event"].downcase.tr(' ', '_').tr('&','n')}"
       .fourteen.columns.talk{id: "#{id}"}
         .room= talk["place"]
         .title= link_to talk["event"]
