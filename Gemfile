@@ -20,7 +20,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  
+
   gem "modernizr-rails"
   gem "gumby-framework"
 end
@@ -34,6 +34,7 @@ gem 'pry-rails'
 
 group :production do
   gem 'pg'
+  gem 'unicorn'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
