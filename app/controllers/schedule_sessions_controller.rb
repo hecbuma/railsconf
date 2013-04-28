@@ -10,7 +10,7 @@ class ScheduleSessionsController < ApplicationController
   end
   
   def create
-    unless current_user.sessions.find_by_event params['session']['event']
+    unless current_user.sessions.find_by_event_and_speaker params['session']['event'], params['session']['speaker']
       session = current_user.sessions.new params['session']
 
       if session.save
