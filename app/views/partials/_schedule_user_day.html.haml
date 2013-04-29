@@ -1,27 +1,61 @@
-- if row.event_type == "Plenary"
-  - id = row.speaker.downcase.tr(' ', '_').tr('&','n') if row.speaker 
-  .row.time{ class: "my_#{id}"}
-    .fourteen.columns
-      = row["time"]
+.row.time
+  .fourteen.columns 10:00am-11:15am
+- day_talks.where(time:'10:00am-11:15am').each do |talk|
+  - id = talk.speaker.downcase.tr(' ', '_').tr('&','n') if talk.speaker 
   .row.talks{ class: "my_#{id}"}
     .fourteen.columns.talk{id: "#{id}"}
-      .room= row.room
-      .title= link_to row.event
-      .speaker= row.speaker
-      = link_to '/',  class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{row.time}", "data-type" => "#{row.event_type}", "data-day" => "#{day}"  do
+      .room= talk.room
+      .title= link_to talk.event
+      .speaker= talk.speaker
+      = link_to '/',  class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{talk.time}", "data-type" => "#{talk.event_type}", "data-day" => "#{day}"  do
         Remove
 
-- if row.event_type == 'Session'
-  - id = row.speaker.downcase.tr(' ', '_').tr('&','n') if row.speaker 
-  .row.time{class: "my_#{id}"}
-    .fourteen.columns
-      = row.time
+- ['11:30am-12:10pm', '12:20pm- 1:00pm', '1:00pm- 2:00pm', '2:00pm- 2:40pm', '2:50pm- 3:30pm', '3:30pm- 4:00pm', '4:00pm- 4:40pm', '4:50pm- 5:30pm', '5:45pm- 7:00pm'].each do |time|
+  .row.time
+    .fourteen.columns= time
+  - if day_talks.where(time: time).empty?
+    .sixteen.colgrid
+      .row.talks
+        .four.columns.talk
+          .title You haven't select anything for this period.
+  - else
+    - day_talks.where(time: time).each do |talk|
+      - id = talk.speaker.downcase.tr(' ', '_').tr('&','n') if talk.speaker 
+      .sixteen.colgrid{class: "my_#{id}"}
+        .row.talks
+          .four.columns.talk{id: "#{id}"}
+            .room= talk.room
+            .title= link_to talk.event
+            .speaker= talk.speaker
+            = link_to '/', class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{talk.time}", "data-type" => "#{talk.event_type}", "data-day" => "#{day}" do
+              Remove
 
-  .sixteen.colgrid{class: "my_#{id}"}
-    .row.talks
-      .four.columns.talk{id: "#{id}"}
-        .room= row.room
-        .title= link_to row.event
-        .speaker= row.speaker
-        = link_to '/', class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{row.time}", "data-type" => "#{row.event_type}", "data-day" => "#{day}" do
-          Remove
+
+
+/ - if row.event_type == "Plenary"
+/   - id = row.speaker.downcase.tr(' ', '_').tr('&','n') if row.speaker 
+/   .row.time{ class: "my_#{id}"}
+/     .fourteen.columns
+/       = row["time"]
+/   .row.talks{ class: "my_#{id}"}
+/     .fourteen.columns.talk{id: "#{id}"}
+/       .room= row.room
+/       .title= link_to row.event
+/       .speaker= row.speaker
+/       = link_to '/',  class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{row.time}", "data-type" => "#{row.event_type}", "data-day" => "#{day}"  do
+/         Remove
+
+/ - if row.event_type == 'Session'
+/   - id = row.speaker.downcase.tr(' ', '_').tr('&','n') if row.speaker 
+/   .row.time{class: "my_#{id}"}
+/     .fourteen.columns
+/       = row.time
+
+/   .sixteen.colgrid{class: "my_#{id}"}
+/     .row.talks
+/       .four.columns.talk{id: "#{id}"}
+/         .room= row.room
+/         .title= link_to row.event
+/         .speaker= row.speaker
+/         = link_to '/', class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{row.time}", "data-type" => "#{row.event_type}", "data-day" => "#{day}" do
+/           Remove
