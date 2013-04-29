@@ -14,10 +14,10 @@
           %a{:href => "#"} Thu
 
   .tab-content.active
-    = render partial: 'partials/schedule_user_day', locals: {day: 'mon', day_talks: @mon}
+    = render partial: 'partials/schedule_user_day', locals: {day: 'mon', day_talks: @mon, day_times: @normal}
   .tab-content
-    = render partial: 'partials/schedule_user_day', locals: {day: 'tue', day_talks: @tue}
+    = render partial: 'partials/schedule_user_day', locals: {day: 'tue', day_talks: @tue, day_times: @normal}
   .tab-content
-    = render partial: 'partials/schedule_user_day', locals: {day: 'wed', day_talks: @wed}
+    = render partial: 'partials/schedule_user_day', locals: {day: 'wed', day_talks: @wed, day_times: @wednesday}
   .tab-content
-    = render partial: 'partials/schedule_user_day', locals: {day: 'thu', day_talks: @thu}
+    = render partial: 'partials/schedule_user_day', locals: {day: 'thu', day_talks: @thu, day_times: @thuesday}

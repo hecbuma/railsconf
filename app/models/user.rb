@@ -15,6 +15,6 @@ class User < ActiveRecord::Base
   end
 
   def check_id(id)
-    sessions.where(custom_id: id).count > 1
+    sessions.where(custom_id: id).count > 0
   end
 end

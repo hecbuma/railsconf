@@ -11,12 +11,6 @@
       = link_to '/',  class: 'remove label danger', "data-talk" => "#{id}", "data-time" => "#{talk.time}", "data-type" => "#{talk.event_type}", "data-day" => "#{day}"  do
         Remove
 
-- normal = ['11:30am-12:10pm', '12:20pm- 1:00pm', '1:00pm- 2:00pm', '2:00pm- 2:40pm', '2:50pm- 3:30pm', '3:30pm- 4:00pm', '4:00pm- 4:40pm', '4:50pm- 5:30pm', '5:45pm- 7:00pm']
-- wednesday = ['11:30am-12:10pm', '12:20pm- 1:00pm', '1:00pm- 2:00pm', '2:00pm- 2:40pm', '2:50pm- 3:30pm', '3:30pm- 4:00pm', '4:00pm- 5:30pm', '5:45pm- 6:30pm'] 
-- thuesday = ['11:20am-12:00pm', '12:00pm- 2:00pm', '2:00pm- 3:30pm', '3:30pm- 4:30pm']
-- day_times = normal
-- day_times = wednesday if day == 'wed' 
-- day_times = thuesday if day == 'thu' 
 - day_times.each do |time|
   .row.time
     .fourteen.columns= time

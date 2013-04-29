@@ -7,6 +7,10 @@ class ScheduleSessionsController < ApplicationController
     @tue = current_user.sessions.where(day:'tue')
     @wed = current_user.sessions.where(day:'wed')
     @thu = current_user.sessions.where(day:'thu')
+
+    @normal = ['11:30am-12:10pm', '12:20pm- 1:00pm', '1:00pm- 2:00pm', '2:00pm- 2:40pm', '2:50pm- 3:30pm', '3:30pm- 4:00pm', '4:00pm- 4:40pm', '4:50pm- 5:30pm', '5:45pm- 7:00pm']
+    @wednesday = ['11:30am-12:10pm', '12:20pm- 1:00pm', '1:00pm- 2:00pm', '2:00pm- 2:40pm', '2:50pm- 3:30pm', '3:30pm- 4:00pm', '4:00pm- 5:30pm', '5:45pm- 6:30pm'] 
+    @thuesday = ['11:20am-12:00pm', '12:00pm- 2:00pm', '2:00pm- 3:30pm', '3:30pm- 4:30pm']
   end
   
   def create
