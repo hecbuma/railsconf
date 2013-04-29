@@ -58,7 +58,7 @@
 	{
 		"id": 4,
 		"event_type": "Plenary",
-		"time": " 2:00pm- 3:30pm",
+		"time": "2:00pm- 3:30pm",
 		"events": [
 			{
 				"place": "251+257+258",
@@ -70,7 +70,7 @@
 	{
 		"id": 5,
 		"event_type": "Party",
-		"time": " 3:30pm- 4:30pm",
+		"time": "3:30pm- 4:30pm",
 		"events": [
 			{
 				"place": "",

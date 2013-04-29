@@ -73,7 +73,7 @@
 	{
 		"id": 4,
 		"event_type": "Lunch",
-		"time": " 1:00pm- 2:00pm",
+		"time": "1:00pm- 2:00pm",
 		"events": [
 			{
 				"place": "",
@@ -84,7 +84,7 @@
 	{
 		"id": 5,
 		"event_type": "Session",
-		"time": " 2:00pm- 2:40pm",
+		"time": "2:00pm- 2:40pm",
 		"events": [
 			{
 				"place": "252+253",
@@ -116,7 +116,7 @@
 	{
 		"id": 6,
 		"event_type": "Session",
-		"time": " 2:50pm- 3:30pm",
+		"time": "2:50pm- 3:30pm",
 		"events": [
 			{
 				"place": "252+253",
@@ -147,7 +147,7 @@
 	{
 		"id": 7,
 		"event_type": "Break",
-		"time": " 3:30pm- 4:00pm",
+		"time": "3:30pm- 4:00pm",
 		"events": [
 			{
 				"place": "",
@@ -158,7 +158,7 @@
 	{
 		"id": 8,
 		"event_type": "Session",
-		"time": " 4:00pm- 4:40pm",
+		"time": "4:00pm- 4:40pm",
 		"events": [
 			{
 				"place": "252+253",
@@ -185,7 +185,7 @@
 	{
 		"id": 9,
 		"event_type": "Session",
-		"time": " 4:50pm- 5:30pm",
+		"time": "4:50pm- 5:30pm",
 		"events": [
 			{
 				"place": "252+253",
@@ -211,7 +211,7 @@
 	{
 		"id": 10,
 		"event_type": "Party",
-		"time": " 5:30pm- 7:00pm",
+		"time": "5:30pm- 7:00pm",
 		"events": [
 			{
 				"place": "",
