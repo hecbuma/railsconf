@@ -15,8 +15,6 @@ class User < ActiveRecord::Base
   end
 
   def check_id(id)
-    ids = sessions.map(&:custom_id)
-    ids.include? id
+    sessions.where(custom_id: id).count > 1
   end
-
 end
