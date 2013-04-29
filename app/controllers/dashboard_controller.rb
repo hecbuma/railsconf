@@ -1,17 +1,5 @@
 class DashboardController < ApplicationController
   def index
-    mon =  File.read(File.join(Rails.root, "/public/railsconf-output/schedule1.json"))
-    tus =  File.read(File.join(Rails.root, "/public/railsconf-output/schedule2.json"))
-    wed =  File.read(File.join(Rails.root, "/public/railsconf-output/schedule3.json"))
-    thu =  File.read(File.join(Rails.root, "/public/railsconf-output/schedule4.json"))
-    talks = File.read(File.join(Rails.root, "public/railsconf-output/talks.json"))
-
-    mon = ActiveSupport::JSON.decode(mon)
-    tus = ActiveSupport::JSON.decode(tus)
-    wed = ActiveSupport::JSON.decode(wed)
-    thu = ActiveSupport::JSON.decode(thu)
-    talks = ActiveSupport::JSON.decode(talks)
-
-    @full_schedule = {mon: mon, tus: tus, wed: wed, thu: thu }
+    @full_schedule = Rails.cache.read(:full_schedule)
   end
 end
