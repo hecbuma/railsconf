@@ -25,8 +25,8 @@ $ ->
     time = $(@).data('time')
     day =  $(@).data('day')
     event_type = $(@).data('type')
-    room = $("##{talk} .room").text()
-    event = $("##{talk} .title").text()
+    room = $("##{talk} .room").first().text()
+    event = $("##{talk} .title").first().text()
     speaker = $("##{talk} .speaker").first().text()
     params = { session: { time: time, room: room, event: event, speaker: speaker, event_type: event_type, day: day, custom_id: talk }}
 
