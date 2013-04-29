@@ -12,6 +12,18 @@
     #wrapper
       = render 'partials/navigation'
       .container
+        .row
+          .fourteen.columns
+            .alert.danger 
+              %p 
+                RailsConf has change their schedule later tonite (04/28), be sure to review your selection before go to any session, I'm working in update this app as fast as I can.
+            .alert.default
+              %p
+                You can find the repo 
+                = link_to 'here', 'https://github.com/hecbuma/railsconf', target: "_blank"
+                feel freet to submit your pull request to make this app better.
+              %p Railsconf, if you give me an JSON with the data this app will be awesome.
+
         - if flash[:notice]
           .row
             .fourteen.columns
