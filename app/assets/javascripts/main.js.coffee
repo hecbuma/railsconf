@@ -27,7 +27,7 @@ $ ->
     event_type = $(@).data('type')
     room = $("##{talk} .room").text()
     event = $("##{talk} .title").text()
-    speaker = $("##{talk} .speaker").text()
+    speaker = $("##{talk} .speaker").first().text()
     params = { session: { time: time, room: room, event: event, speaker: speaker, event_type: event_type, day: day, custom_id: talk }}
 
     $.post '/my_schedule.json', params, (data) =>
