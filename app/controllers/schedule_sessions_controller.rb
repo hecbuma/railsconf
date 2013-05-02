@@ -30,15 +30,12 @@ class ScheduleSessionsController < ApplicationController
   end
 
   def destroy
-    session = current_user.sessions.where(:id => params[:id]).first 
-    if session.delete
-      @messgae = {success: "Talk removed" }
+    session = current_user.sessions.where(:custom_id => params[:id]).first 
+    if session.destroy
+      @message = {success: "Talk removed" }
     else
       @message = {error: "We have some issues removing that talk"}
     end
-
     render json: @message
-
   end
-
 end
