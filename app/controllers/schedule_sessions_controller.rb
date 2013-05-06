@@ -14,7 +14,7 @@ class ScheduleSessionsController < ApplicationController
   end
   
   def create
-    unless current_user.sessions.find_by_event_and_speaker params['session']['event'], params['session']['speaker']
+    unless current_user.sessions.where(:event => params['session']['event'], :speaker => params['session']['speaker']).first
       session = current_user.sessions.new params['session']
 
       if session.save
@@ -30,15 +30,12 @@ class ScheduleSessionsController < ApplicationController
   end
 
   def destroy
-    session = current_user.sessions.find_by_custom_id params[:id]
-    if session.delete
-      @messgae = {success: "Talk removed" }
+    session = current_user.sessions.where(:custom_id => params[:id]).first 
+    if session.destroy
+      @message = {success: "Talk removed" }
     else
       @message = {error: "We have some issues removing that talk"}
     end
-
     render json: @message
-
   end
-
 end
